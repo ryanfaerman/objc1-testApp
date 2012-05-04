@@ -36,6 +36,8 @@
   // Can we feed all of our monkeys?
   if(hungryMonkeys && monkeyCount <= bananas) {
     NSLog(@"Looks like we have a bunch of hungry monkeys that we can feed!");
+  } else if (hungryMonkeys && monkeyCount > bananas) {
+    NSLog(@"Looks like some monkeys are going to go hungry! Poor monkeys :(");
   } else {
     NSLog(@"Monkeys that aren't hungry? What is the world coming to?");
   }
