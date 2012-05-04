@@ -24,7 +24,54 @@
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
-  NSLog(@"hello world");
+  
+  // First, we'll start off talking about monkeys because monkeys are awesome.
+  float bananas = 14.5;
+  NSLog(@"There are exactly %f bananas, but to a monkey, that means there are %d", bananas, (int)bananas);
+  
+  // Our monkeys seem to be hungry.
+  bool hungryMonkeys = YES;
+  int monkeyCount = 10;
+  
+  // Can we feed all of our monkeys?
+  if(hungryMonkeys && monkeyCount <= bananas) {
+    NSLog(@"Looks like we have a bunch of hungry monkeys that we can feed!");
+  } else {
+    NSLog(@"Monkeys that aren't hungry? What is the world coming to?");
+  }
+  
+  // After being fed, the monkeys like to jump on the bed.
+  for(int i = 10; i > 0; i--) {
+    NSLog(@"%d monkey(s) jumping on the bed, one fell off and bumped his head.", i);
+    NSLog(@"Went to the doctor and the doctor said, NO MORE MONKEYS JUMPING ON THE BED!");
+  }
+  
+  // Enough about monkeys. Time for a pirate song!
+  // What do pirates like more than buried treasure?
+  // RUM and drinking songs!
+  for (int i = 5; i > 0; i--) {
+    NSLog(@"%d bottles of rum on the wall,", i);
+    NSLog(@"%d bottles of rum...", i);
+    NSLog(@"Take one down, pass it around... %d bottles of rum on the wall!", i-1);
+    
+    // Our pirates are getting a little excited because they love being pirates.
+    for (int j = 0; j < 3; j++) {
+      NSLog(@"Yoho! Yoho! A pirate's life for me!");
+    }
+  }
+  
+  // Somtimes, the pirate captain likes to impress his sea-dog mates
+  // with his impressive counting ability.
+  NSLog(@"I can count... All the way... To shfifty-five!");
+  int k = 0;
+  while (k <= 55) {
+    NSLog(@"I know %d", k);
+    k += 5;
+  }
+  NSLog(@"See, I told you I could count to shfifty-five!");
+  
+  
+  
   return YES;
 }
 
