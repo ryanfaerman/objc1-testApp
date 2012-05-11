@@ -22,7 +22,7 @@
 {
   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
-  self.window.backgroundColor = [UIColor whiteColor];
+  self.window.backgroundColor = [UIColor blackColor];
   [self.window makeKeyAndVisible];
   
   // First, we'll start off talking about monkeys because monkeys are awesome.
