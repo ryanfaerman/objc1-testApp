@@ -101,9 +101,7 @@
   NSMutableString *topicList = [[NSMutableString alloc] initWithString:@""];
   
   // Join the array elements into a string
-  for(int i = 0; i < [topics count]; i++) {
-    [topicList appendFormat:@"%@, ",[topics objectAtIndex:i]];
-  }
+  [topicList appendString:[topics componentsJoinedByString:@", "]];
   
   // topic Label
   UILabel *topicLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 420.0f, 200.0f, 30.0f)];
